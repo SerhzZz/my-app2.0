@@ -1,0 +1,199 @@
+.navigation {
+  min-height: 86px;
+  box-sizing: border-box;
+  background: rgba(23, 22, 22, 0.46);
+  border-radius: 1px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navigationItem {
+  cursor: pointer;
+  padding: 10px;
+}
+.navigationName {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: #020202;
+  opacity: 0.5;
+  border-bottom: 1px transparent solid;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.navigationItemActive {
+  cursor: pointer;
+
+  .navigationName {
+    border-bottom: 1px black solid;
+  }
+}
+
+.products {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.product {
+  padding: 10px 20px;
+}
+.cardInformation,
+.cardCount {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cardInformation {
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cardTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0a0a0a;
+}
+.count {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0a0a0a;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.cardImage {
+  width: 20px;
+  height: 14px;
+}
+.pageNavigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.pageItemNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: rgba(10, 10, 11, 0.6);
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.pageItemPoints {
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .pageItemText {
+    color: #000000;
+  }
+}
+.pageItemText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.addItem {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 2px black solid;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+
+  &:hover {
+    border-color: gray;
+    color: gray;
+  }
+}
+.imageWrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .navigation {
+    height: 86px;
+    padding: 10px 20px;
+    display: block;
+    height: auto;
+  }
+  .navigationName {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .navigationItem,
+  .navigationItemActive {
+    padding-bottom: 5px;
+    .navigationName {
+      display: block;
+      padding-left: 5px;
+      border-bottom: 1px transparent solid;
+      border-left: 1px transparent solid;
+    }
+  }
+
+  .navigationItemActive {
+    padding-bottom: 5px;
+  }
+
+  .navigationItemActive .navigationName {
+    border-left: 1px black solid;
+    color: black;
+    opacity: 1;
+  }
+  .navigationName {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .product {
+    margin: 30px auto;
+    margin-bottom: 30px;
+    border: 2px black solid;
+    border-radius: 15px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .pageNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,118 @@
+.registration {
+  margin: 0 auto;
+  margin-top: 220px;
+  width: 780px;
+  height: 320px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  margin-bottom: 200px;
+}
+.title {
+  padding: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 67px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-align: center;
+}
+.email,
+.password {
+  display: block;
+  margin: 5px auto;
+  width: 460px;
+  height: 46px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background: transparent;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 15px;
+
+  &:invalid {
+    border-color: red;
+  }
+  &:valid {
+    border-color: green;
+  }
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 460px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.registr {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.link {
+  color: #2405e4;
+}
+.submit {
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  background: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fffbfb;
+  cursor: pointer;
+}
+@media (max-width: 880px) {
+  .registration {
+    width: auto;
+    margin: 100px 20px;
+  }
+  .title {
+    padding: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .email,
+  .password {
+    display: block;
+    margin: 5px auto;
+    width: auto;
+    height: 46px;
+    margin-bottom: 15px;
+  }
+  .text {
+    width: auto;
+    display: block;
+    padding: 0 20px;
+    margin: 10px auto;
+  }
+  .registr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: none;
+    font-style: normal;
+  }
+  .submit {
+    display: block;
+    margin: 20px auto;
+  }
+}

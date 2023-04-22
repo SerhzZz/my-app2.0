@@ -1,0 +1,38 @@
+.bag {
+}
+.title {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  color: #010101;
+  text-align: center;
+  margin-bottom: 240px;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  margin-bottom: 300px;
+}
+.button {
+  padding: 14px 47px;
+  background: rgba(0, 0, 0, 0.59);
+  border-radius: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff2f2;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}
